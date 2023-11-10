@@ -25,7 +25,7 @@ class Configuration:
     config.read(config_path)
     
     'Telegram' in config
-    VIRUS_TOTAL_API_KEY =  config['VirusTotal']['API_KEY']   #"57e3de8428a9e14885e553719f4800e738d2150b1058e51ee9b1dc0b9b0a044d"
+    VIRUS_TOTAL_API_KEY =  config['VirusTotal']['API_KEY']  
     VIRUS_TOTAL_ENDPOINT_URL = config['VirusTotal']['ENDPOINT_URL'] #"https://www.virustotal.com/api/v3/urls/"
     VIRUS_TOTAL_REPORT_LINK = config['VirusTotal']['REPORT_LINK']  #"https://www.virustotal.com/gui/url/"
     TIME_STAMP = time.time()
