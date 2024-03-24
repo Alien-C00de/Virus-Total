@@ -1,30 +1,44 @@
-# Virus-Total
-This Code Analyse suspicious domains, IPs and URLs to detect malware and other breaches and share the report in HTML & PDF format. 
+# VirusTotal Analysis Tool - Using Python
 
-VirusTotal python program with multiprocessing to handle multiple IP list.
+The VirusTotal Analysis Tool is a sophisticated Python application designed to scrutinize suspicious domains, IPs, and URLs. It employs advanced detection algorithms to identify malware and other security threats, subsequently sharing the findings in both HTML and PDF report formats.
 
-Install following library to run the code.
-1. pip install Pandas
-2. pip install requests
-3. pip install configparser
-4. sudo apt-get install wkhtmltopdf  - Install wkhtmltopdf (for Debian/Ubuntu)
-5. pip install pdfkit
+## Key Features
 
+- Analyzes and identifies potential threats in domains, IPs, and URLs.
+- Generates comprehensive reports in HTML and PDF formats.
+- Utilizes multiprocessing for efficient handling of multiple IP lists.
 
-Following are the command to run the code.
-1. For Single ip search
-   python VirusTotal_Tool.py -s 8.8.8.8    
-   
-2. For Single URL search 
+## Installation
+
+To set up the VirusTotal Analysis Tool, you need to install the following libraries:
+
+```bash
+pip install pandas
+pip install requests
+pip install configparser
+sudo apt-get install wkhtmltopdf  # For Debian/Ubuntu systems
+pip install pdfkit
+```
+
+## Usage
+The tool can be operated using the following commands:
+- To analyze a single IP:
+   ```bash
+   python VirusTotal_Tool.py -s 8.8.8.8
+   ```
+- To analyze a single URL:
+   ```bash
    python VirusTotal_Tool.py -s google.com
-
-3. For List of IP search from file
+   ```
+- To analyze a list of IPs from a file:
+   ```bash
    python VirusTotal_Tool.py -i target_ip.txt
+   ```
 
-Files 
+## File Descriptions
 
-1. Python File - VirusTotal_Tool.py
-2. conftg.ini - This file conain API key and URL link from virustotal.com, please get your API key to run the program. 
-3. File contain sample list of IP for search - target_ip.txt
-4. HTML report file (output file) - VirusTotalReport.html
-5. PDF report file (output file) - VirusTotalReport.pdf
+- VirusTotal_Tool.py: The main Python script for the analysis tool.
+- config.ini: Configuration file containing the API key and URL link from virustotal.com. Please obtain your API key to operate the program.
+- target_ip.txt: A sample file containing a list of IPs for analysis.
+- VirusTotalReport.html: The HTML format report generated after analysis.
+- VirusTotalReport.pdf: The PDF format report generated after analysis.
